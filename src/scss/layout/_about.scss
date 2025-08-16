@@ -1,0 +1,75 @@
+@use '../components/variables' as *;
+
+.about {
+    margin-bottom: 190px;
+
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__content {
+        max-width: 470px;
+    }
+
+    &__textbox {
+        margin-bottom: 90px;
+    }
+
+    &__title {
+        font-style: italic;
+        font-weight: 600;
+        font-size: 34px;
+        text-transform: capitalize;
+        color: $about-main-color;
+        margin-bottom: 30px;
+    }
+
+    &__subtitle {
+        font-style: italic;
+        font-size: 14px;
+        color: $about-second-color;
+    }
+
+    &__grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-column-gap: 40px;
+        grid-row-gap: 25px;
+    }
+
+    &__item-img {
+        margin-bottom: 15px;
+    }
+
+    &__item-title {
+        font-size: 14px;
+        font-weight: 600;
+        font-style: italic;
+        color: $about-main-color;
+        margin-bottom: 10px;
+    }
+
+    &__item-text {
+        font-size: 14px;
+        font-style: italic;
+        color: $about-second-color;
+    }
+
+    &__content-decor {
+        position: relative;
+    }
+
+    &__img {
+        position: relative;
+        z-index: 2;
+    }
+
+    &__img-decor {
+        position: absolute;
+        top: -55px;
+        left: -85px;
+        z-index: 1;
+    }
+}

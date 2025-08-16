@@ -1,0 +1,96 @@
+@use '../components/variables' as *;
+
+    .header {
+        margin-bottom: 130px;
+
+        &__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 24px;
+        margin-bottom: 115px;
+        }
+        
+        &__logo-link {
+            font-weight: 500;
+            font-size: 32px;
+            color: $logo-color;
+        }
+
+        &__logo-link:hover {
+            color: $logo-hover-color;
+        }
+
+        &__logo-span {
+            color: $nav-color;
+        }
+
+        &__nav-list {
+            display: flex;
+            justify-content: space-between;
+            gap: 44px;
+        }
+
+        &__nav-link {
+            color: $nav-color;
+            font-weight: 500;
+            font-size: 16px;
+        }
+
+        &__nav-link:hover {
+            color: $nav-hover-color;
+            border-bottom: solid 5px $nav-hover-border-color;
+        }
+
+        &__content {
+            display: flex;
+        }
+
+        &__content-inner {
+            max-width: 420px;
+        }
+
+        &__content-text {
+            font-size: 54px;
+            font-weight: 600;
+            color: $header-text-color;
+            font-style: italic;
+            margin-bottom: 115px;
+        }
+
+        &__content-links {
+            display: flex;
+            gap: 15px;
+        }
+
+        &__link {
+            font-style: italic;
+            color: $header-link-color;
+            padding: 11px 37px;
+            border: 2px solid $header-link-border-color;
+            border-radius: 30px;
+        }
+
+        &__link:hover {
+            color: $header-link-hover-color;
+            background-color: $header-link-hover-bgc;
+            border-color: $header-link-hover-border-color;
+        }
+
+        &__decoration {
+            position: relative;
+        }
+
+        &__decoration-item {
+            position: absolute;
+            top: 0;
+            right: 0;
+            z-index: 1;
+        }
+
+        &__decoration-img {
+            position: relative;
+            z-index: 2;
+        }
+    }
+
