@@ -16,21 +16,6 @@
         margin-bottom: 90px;
     }
 
-    &__title {
-        font-style: italic;
-        font-weight: 600;
-        font-size: 34px;
-        text-transform: capitalize;
-        color: $about-main-color;
-        margin-bottom: 30px;
-    }
-
-    &__subtitle {
-        font-style: italic;
-        font-size: 14px;
-        color: $about-second-color;
-    }
-
     &__grid {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -71,5 +56,15 @@
         top: -55px;
         left: -85px;
         z-index: 1;
+    }
+
+    &__decor1, &__decor2, &__decor3, &__decor4 {
+        position: relative;
+    }
+
+    &__circle1, &__circle2, &__circle3, &__circle4 {
+        position: absolute;
+        top: 5px;
+        left: 15px;
     }
 }

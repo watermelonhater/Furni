@@ -1,0 +1,16 @@
+@use 'variables' as *;
+
+.grey-btn {
+        color: $products-link-color;
+        background-color: $products-base-color;
+        font-style: italic;
+        font-weight: 500;
+        padding: 11px 32px;
+        border-radius: 30px;
+
+        &.grey-btn:hover {
+            color: $header-link-hover-color;
+            background-color: $header-link-hover-bgc;
+            border-color: $header-link-hover-border-color;
+        }
+}
