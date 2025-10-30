@@ -1,0 +1,55 @@
+@use '../components/variables' as *;
+
+.reviews {
+    margin-bottom: 160px;
+
+    &__top {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 36px;
+        color: #2F2F2F;
+        font-weight: 600;
+        font-style: italic;
+        line-height: 41px;
+    }
+
+    &__title {
+        font-size: 34px;
+    }
+
+    &__link {
+        display: inline-block;
+        font-size: 16px;
+        text-decoration: underline;
+        text-decoration-color: transparent;
+        text-decoration-thickness: 3px;
+        text-underline-offset: 5px;
+        transition: .3s;
+    }
+
+    &__link:hover {
+        text-decoration-color: black;
+    }
+
+    &__items {
+        display: flex;
+        justify-content: space-between;
+        gap: 30px;
+    }
+
+    &__img {
+        margin-bottom: 44px;
+    }
+}
+
+.blockquote {
+    color: #2F2F2F;
+
+        &__title {
+            margin-bottom: 5px;
+            font-style: italic;
+            font-weight: 600;
+            font-size: 18px;
+        }
+
+    }

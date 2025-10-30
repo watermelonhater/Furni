@@ -1,0 +1,39 @@
+@use '../components/variables' as *;
+
+.gallery {
+    margin-bottom: 95px;
+
+    &__list {
+        display: flex;
+        justify-content: space-between;
+        gap: 50px;
+    }
+
+    &__item {
+        display: flex;
+        gap: 33px;
+    }
+
+    &__textbox {
+        display: flex;
+        flex-direction: column;
+        gap: 11px;
+        font-style: italic;
+        line-height: 22px;
+        font-weight: bold;
+        font-size: 14px;
+        color: #6A6A6A;
+    }
+
+    &__title{
+        color: black;
+    }
+
+    &__text {
+        font-weight: normal;
+    }
+
+    &__link:hover {
+        color: #F9BF29;
+    }
+}
