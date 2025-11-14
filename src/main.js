@@ -2,15 +2,17 @@ import './scss/main.scss'
 
 const swiper = new Swiper('.swiper', {
   // Optional parameters
-  direction: 'vertical',
+  direction: 'horizontal',
   loop: true,
+  slidersPreView: '1',
+  spaceBetween: 30,
 
-  // If we need pagination
   pagination: {
     el: '.swiper-pagination',
+    type: 'bullets',
+    clickable: true,
   },
 
-  // Navigation arrows
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
@@ -20,4 +22,6 @@ const swiper = new Swiper('.swiper', {
   scrollbar: {
     el: '.swiper-scrollbar',
   },
+
+  grabCursor: true,
 });
